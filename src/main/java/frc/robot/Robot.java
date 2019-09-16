@@ -30,8 +30,9 @@ public class Robot extends IterativeRobot {
 	Joystick leftJoy = new Joystick( 0);
 	Joystick rightJoy = new Joystick(1);
 	Joystick operator = new Joystick(2);
-    Encoder rightEncoder = new Encoder(6, 7, true); //true
-    Encoder leftEncoder = new Encoder(8, 9, false); //false
+  Encoder rightEncoder = new Encoder(6, 7, true); //true
+  Encoder leftEncoder = new Encoder(8, 9, false); //false
+    
  
 
 
@@ -39,7 +40,7 @@ public class Robot extends IterativeRobot {
     
     @Override
     public void robotInit() {
-	 
+      
     }
 
     
@@ -63,11 +64,15 @@ public class Robot extends IterativeRobot {
 
     @Override
     public void testInit() {    
-    
+  
     }
 
 
     public void testPeriodic() {
+   
+      
+    
+
         }
       
 

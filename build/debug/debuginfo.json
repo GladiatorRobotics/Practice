@@ -1,9 +1,9 @@
 [
   {
-    "artifact": "frcJava",
+    "artifact": "frcJava (in project Practice)",
     "target": "roborio",
     "debugfile": "frcJava_roborio.debugconfig",
-    "project": "DeepSpace",
+    "project": "Practice",
     "language": "java"
   }
 ]
