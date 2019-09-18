@@ -21,12 +21,17 @@ import edu.wpi.first.wpilibj.Timer;
  */
 
 public class Robot extends IterativeRobot {
-  TalonSRX leftMotor1 = new TalonSRX(6); // 6, 10, 5, 4
-  TalonSRX leftMotor2 = new TalonSRX(5);
-  TalonSRX rightMotor1 = new TalonSRX(4);// 10
-  TalonSRX rightMotor2 = new TalonSRX(8);// 10
-  TalonSRX rightElevatorMotor = new TalonSRX(2);
-  TalonSRX leftElevatorMotor = new TalonSRX(1);
+  TalonSRX leftMotor1 = new TalonSRX(6); // 6, 10, 5, 4 rightelevatormotor
+  TalonSRX leftMotor2 = new TalonSRX(5);//leftelevatormotor
+  TalonSRX rightMotor1 = new TalonSRX(4);// 10 leftmotor
+  TalonSRX rightMotor2 = new TalonSRX(8);// 10 Attatchmentinback
+  TalonSRX rightElevatorMotor = new TalonSRX(2);//Claw
+  TalonSRX leftElevatorMotor = new TalonSRX(1);//rightmotor
+  TalonSRX variable7 = new TalonSRX(7);//raisefrontmodule
+  TalonSRX variable9 = new TalonSRX(9);//frontrightmotor
+  TalonSRX variable10 = new TalonSRX(10);//nothing
+  TalonSRX variable11 = new TalonSRX(11);//nothing
+  TalonSRX variable12 = new TalonSRX(12);//nothing
 	Joystick leftJoy = new Joystick( 0);
 	Joystick rightJoy = new Joystick(1);
 	Joystick operator = new Joystick(2);
@@ -55,11 +60,12 @@ public class Robot extends IterativeRobot {
     
     @Override
     public void teleopInit() {
-    	
+      //leftMotor2.set(ControlMode.PercentOutput, );
    		 }    
 
     public void teleopPeriodic() {	                                                                              
       
+      variable12.set(ControlMode.PercentOutput, leftJoy.getY());
     }
 
     @Override
@@ -69,9 +75,7 @@ public class Robot extends IterativeRobot {
 
 
     public void testPeriodic() {
-   
-      
-    
+
 
         }
       
