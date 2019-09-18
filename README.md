@@ -10,7 +10,7 @@ With a new project created, right click `build.gradle` from your project files a
 You should be set to run code after that.
 
 #### Organization of our Git repo
-
+TESTING GIQTHUB
 Our Git repo will be organized by modules. Separate subdirectories will exist for different modules.
 Basic organization is shown below:
 ````
