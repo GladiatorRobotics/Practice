@@ -34,11 +34,14 @@ public class imudata{
     point_midx = visiontable.getEntry("MidpointX").getDouble(0);
     point_midy = visiontable.getEntry("MidpointY").getDouble(0);
     
+    midpoint = visiontable.getEntry("Midpoint").getDouble(0);
     
 
     slope = (point_y2-point_y1)/(point_x2-point_x1);
-    midpoint = (point_x1+point_x2)/2;
+    //midpoint = (point_x1+point_x2)/2;
     midpointFeet = Math.abs(300 - midpoint) / 700;
+
+    //System.out.println(midpoint);
     /*
     System.out.println("Point 1 X: " + point_x1);
     System.out.println("Point 1 Y: " + point_y1);
